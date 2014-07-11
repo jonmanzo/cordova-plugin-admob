@@ -11,7 +11,7 @@
 	<license>MIT</license>
 	<keywords>ad,admob</keywords>
     <repo>https://github.com/jonmanzo/cordova-plugin-admob.git</repo>
-    <issue>https://github.com/floatinghotpot/cordova-plugin-admob/issues</issue>
+    <issue>https://github.com/jonmanzo/cordova-plugin-admob/issues</issue>
 
 	<engines>
 	    <engine name="cordova" version=">=2.9" />
