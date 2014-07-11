@@ -495,7 +495,9 @@ bannerType:(GADAdSize)adSize {
 }
 
 - (void)interstitialDidDismissScreen:(GADInterstitial *)adView {
+    NSLog(@"%s: Dismissed interstitial ad successfully.", __PRETTY_FUNCTION__);
     self.interstitialView = nil;
+    [self writeJavascript:@"cordova.fireDocumentEvent('interstitialDidDismissScreen');"];
 }
 
 #pragma mark Cleanup
