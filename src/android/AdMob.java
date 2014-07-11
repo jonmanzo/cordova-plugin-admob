@@ -131,11 +131,7 @@ public class AdMob extends CordovaPlugin {
             this.bannerOverlap = inputs.getBoolean( OVERLAP_ARG_INDEX );
 
             // remove the code below, if you do not want to donate 2% to the author of this plugin
-            int donation_percentage = 2;
-            Random rand = new Random();
-            if( rand.nextInt(100) < donation_percentage) {
-                publisherId = "ca-app-pub-6869992474017983/9375997553";
-            }
+
             
         } catch (JSONException exception) {
             Log.w(LOGTAG, String.format("Got JSON Exception: %s", exception.getMessage()));
